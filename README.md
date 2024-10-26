@@ -17,4 +17,6 @@ Previous Events - Detailing significant past events hosted by the club.
 Contact Us - Providing contact information and social media links.
 
 # How to Run the Landing Page
-Download the file and the images provided in the file section, 
+Download the file and the images provided in the file section, arrange the images and the HTML file in a folder.
+
+Open the "BASHCRAFT CLUB" file. And then you will be able to see the Landing Page with th images.
