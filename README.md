@@ -15,3 +15,6 @@ Our Teams - Listing the main teams within the club.
 Previous Events - Detailing significant past events hosted by the club.
 
 Contact Us - Providing contact information and social media links.
+
+# How to Run the Landing Page
+Download the file and the images provided in the file section, 
