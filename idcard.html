@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student ID Card - Bashcraft Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Page Container */
+    body, html {
+      background-color: #f3ebe1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    /* Animated ID Card */
+    .id-card {
+      width: 300px;
+      height: 520px;
+      background-color: #fff7f0;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .id-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Header Section */
+    .header {
+      width: 100%;
+      background-color: #a26f52;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 22px;
+      border-radius: 10px 10px 0 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      background-color: #d3b8a3;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 5px solid #fff;
+      animation: bounceIn 1s ease;
+    }
+
+    /* Keyframe Animation for Profile Picture */
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    /* Info Section */
+    .info-section {
+      margin-top: 30px;
+      text-align: center;
+      color: #5e4638;
+    }
+
+    .info-section .label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .info-section .value {
+      font-size: 14px;
+      color: #4a3b30;
+      margin-bottom: 15px;
+    }
+
+    /* Social Icons Section */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Custom Colors for Icons */
+    .icon.instagram { background-color: #E4405F; } /* Instagram Color */
+    .icon.linkedin { background-color: #0077B5; } /* LinkedIn Color */
+    .icon.whatsapp { background-color: #25D366; } /* WhatsApp Color */
+
+    /* Icon Images */
+    .icon img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ID Card -->
+  <div class="id-card">
+    <!-- Header Section -->
+    <div class="header">Bashcraft Club</div>
+
+    <!-- Profile Picture -->
+    <div class="profile-pic"></div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+      <div class="label">Name:</div>
+      <div class="value">Sharon</div>
+      
+      <div class="label">Reg No:</div>
+      <div class="value">22BAI10401</div>
+      
+      <div class="label">Branch:</div>
+      <div class="value">AIML</div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <div class="icon instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </div>
+      <div class="icon linkedin">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">
+      </div>
+      <div class="icon whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
